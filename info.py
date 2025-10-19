@@ -59,14 +59,6 @@ if len(LOG_CHANNEL) == 0:
     exit()
 else:
     LOG_CHANNEL = int(LOG_CHANNEL)
-    
-# support group
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '')
-if len(SUPPORT_GROUP) == 0:
-    logger.error('SUPPORT_GROUP is missing, exiting now')
-    exit()
-else:
-    SUPPORT_GROUP = int(SUPPORT_GROUP)
 
 # MongoDB information
 DATA_DATABASE_URL = environ.get('DATA_DATABASE_URL', "")
